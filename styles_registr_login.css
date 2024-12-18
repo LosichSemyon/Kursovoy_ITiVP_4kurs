@@ -1,0 +1,77 @@
+body {
+    background-color: #007bff; 
+    color: black; 
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 8px solid #000; 
+    border-radius: 15px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ffcc00; /* Желтый цвет фона кнопки */
+    color: #000; /* Черный цвет текста кнопки */
+    border: 2px solid #000; /* Черная обводка вокруг кнопки */
+    border-radius: 10px; /* Закругленные углы кнопки */
+    padding: 10px 20px; /* Внутренние отступы кнопки */
+    cursor: pointer; /* Изменение формы указателя при наведении на кнопку */
+}
+
+button:hover {
+    background-color: #ffc200; /* Цвет фона кнопки при наведении */
+}
+
+/* CSS код для анимации в виде колеса машины */
+
+
+
+@keyframes roll {
+    0% { transform: rotate(0deg); 
+        left: 30%; /* начальное положение колеса за левой границей экрана */
+    }
+    100% {transform: rotate(360deg);
+        left: 70%; /* конечное положение колеса за правой границей экрана */
+    }
+}
+
+.loader {
+    display: none;
+    width: 70px;
+    height: 70px;
+    background: url('media/loader.png') center center no-repeat;
+    background-size: contain;
+    position: fixed;
+    top: 50%;
+    left: -100px; 
+    animation: roll 1500ms linear infinite; 
+    z-index: 9999;
+}

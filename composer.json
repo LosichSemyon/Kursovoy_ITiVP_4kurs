@@ -1,0 +1,12 @@
+{
+    "name": "mobileuser/autoservice.mydev",
+    "autoload": {
+        "psr-4": {
+            "Mobileuser\\AutoserviceMydev\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.29"
+    }
+}
